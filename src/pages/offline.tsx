@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Main } from '@/templates/Main';
 
 const Offline = () => (
-  <Main tile="Looks like you're offline.">
+  <Main title="Looks like you're offline.">
     <article className="w-full">
       <h1 className="post-title md:text-6xl mr-auto text-4xl">
         Looks like you&apos;re offline.

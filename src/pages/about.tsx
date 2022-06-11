@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Main } from '@/templates/Main';
 
 const About = () => (
-  <Main tile="About This Site">
+  <Main title="About This Site">
     <article className="w-full">
       <h1 className="post-title md:text-6xl mr-auto text-4xl">
         About This Site
