@@ -6,11 +6,10 @@
     "build": "next build",
     "clean": "rm -rf dist",
     "clean:node": "rm -rf node_modules",
-    "dev": "next",
+    "start": "next",
     "format": "prettier --write \"src/**/*.{js,ts,css,scss}\"",
     "lint": "eslint --fix \"src/**/*.ts\"",
-    "serve": "serve dist",
-    "start": "next start",
+    "serve": "next start",
     "tw": "tailwindcss --no-autoprefixer -i ./src/styles/tailwind.css -o ./src/styles/tw.css"
   },
   "repository": {
