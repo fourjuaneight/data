@@ -1,10 +1,6 @@
-const cssnano = require('cssnano');
-const postcssPresetEnv = require('postcss-preset-env');
-const tailwind = require('tailwindcss');
-
-module.exports = () => ({
+module.exports = {
   plugins: {
-    postcssPresetEnv: postcssPresetEnv({
+    'postcss-preset-env': {
       stage: 3,
       features: {
         'custom-properties': {
@@ -17,8 +13,8 @@ module.exports = () => ({
         flexbox: true,
         grid: false,
       },
-    }),
-    cssnano: cssnano({
+    },
+    cssnano: {
       preset: [
         'default',
         {
@@ -27,7 +23,7 @@ module.exports = () => ({
           },
         },
       ],
-    }),
-    tailwind,
+    },
+    tailwindcss: {},
   },
-});
+};
