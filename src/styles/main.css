@@ -215,23 +215,18 @@ a.site-name {
   font-weight: bold;
 }
 
-section.intro picture,
-section.intro > span,
-section.intro div.img-wrap {
+section.intro > span {
   justify-content: flex-start;
   width: auto;
 }
 
-section.intro picture img,
-section.intro > span img,
-section.intro div.img-wrap img {
-  max-width: 32rem;
+section.footer > span img,
+section.intro > span img {
+  max-width: 20rem !important;
 }
 
 @media screen and (min-width: 640px) {
-  section.intro picture,
-  section.intro > span,
-  section.intro div.img-wrap {
+  section.intro > span {
     margin-right: auto;
   }
 }
@@ -239,28 +234,6 @@ section.intro div.img-wrap img {
 article ol,
 article ul {
   padding-left: 1rem;
-}
-
-a.footnote-ref {
-  padding: 0 0.15rem;
-  text-decoration: none;
-}
-
-a.footnote-ref::before {
-  color: var(--secondary);
-  content: '[';
-}
-
-a.footnote-ref::after {
-  color: var(--secondary);
-  content: ']';
-}
-
-a.footnote-ref:focus::before,
-a.footnote-ref:focus::after,
-a.footnote-ref:hover::before,
-a.footnote-ref:hover::after {
-  color: var(--primary);
 }
 
 a[data-dark='true'] {
@@ -276,18 +249,15 @@ svg#loader circle {
   fill: var(--secondary);
 }
 
-div.highlight,
 div.mermaid {
   margin: 0 0 0.75rem;
 }
 
-div.highlight pre,
 div.mermaid {
   overflow-x: auto;
   padding: 0.75rem;
 }
 
-div.highlight pre,
 p code,
 li code {
   background-color: #1a1a1a !important;
@@ -298,11 +268,6 @@ li code {
   color: var(--secondary);
   font-size: 0.95rem;
   padding: 0.25rem;
-}
-
-section.footnotes a,
-sup a {
-  text-decoration: none !important;
 }
 
 footer p {
