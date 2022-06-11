@@ -192,18 +192,6 @@ footer ul {
   padding: 0;
 }
 
-header {
-  --nav-width: 14.75625rem;
-}
-
-header nav {
-  max-width: var(--nav-width);
-}
-
-header nav > ul {
-  min-width: var(--nav-width);
-}
-
 time::before {
   color: var(--tertiary);
   content: '\03C4'; /* HTML: &tau; */
@@ -227,7 +215,7 @@ section.intro > span img {
 
 @media screen and (min-width: 640px) {
   section.intro > span {
-    margin-right: auto;
+    margin-right: 1rem !important;
   }
 }
 
