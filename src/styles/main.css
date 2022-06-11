@@ -98,10 +98,9 @@ input {
   height: 2.25rem;
 }
 
+section.intro > span,
 picture,
-div.img-wrap,
-li.bk-cell,
-li.bk-cell > * {
+div.img-wrap {
   overflow: hidden;
 }
 
@@ -217,18 +216,21 @@ a.site-name {
 }
 
 section.intro picture,
+section.intro > span,
 section.intro div.img-wrap {
   justify-content: flex-start;
   width: auto;
 }
 
 section.intro picture img,
+section.intro > span img,
 section.intro div.img-wrap img {
   max-width: 32rem;
 }
 
 @media screen and (min-width: 640px) {
   section.intro picture,
+  section.intro > span,
   section.intro div.img-wrap {
     margin-right: auto;
   }
