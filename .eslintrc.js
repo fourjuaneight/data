@@ -32,13 +32,6 @@ module.exports = {
         '@typescript-eslint/no-use-before-define': [1],
         '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/no-var-requires': 0,
-        '@typescript-eslint/quotes': [
-          2,
-          'backtick',
-          {
-            avoidEscape: true,
-          },
-        ],
       },
     },
   ],
@@ -54,6 +47,7 @@ module.exports = {
   },
   plugins: ['prettier'],
   rules: {
+    'arrow-body-style': 0,
     'id-length': [
       2,
       {
@@ -84,7 +78,7 @@ module.exports = {
     'no-console': [
       'error',
       {
-        allow: ['error', 'log'],
+        allow: ['error', 'info'],
       },
     ],
     'no-case-declarations': 0,
