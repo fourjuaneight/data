@@ -2,7 +2,16 @@ import Head from 'next/head';
 
 import { config } from '@/utils/AppConfig';
 
-const HeadComponent = () => {
+interface HeadProps {
+  title?: string;
+  description?: string;
+}
+
+const HeadComponent = (props: HeadProps) => {
+  const dTitle = props.title
+    ? `${props.title} | ${config.title}`
+    : config.title;
+  const dDescription = props.description || config.description;
   const fontLoading = `
     if ('fonts' in document) {
       const mdNichromeBlack = new FontFace(
@@ -57,8 +66,8 @@ const HeadComponent = () => {
         name="viewport"
         content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover"
       />
-      <title>{config.title}</title>
-      <meta name="description" content={config.description} />
+      <title>{dTitle}</title>
+      <meta name="description" content={dDescription} />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
