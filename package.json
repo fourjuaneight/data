@@ -1,0 +1,83 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "Data consolidation and trends graphs for all the data I hoard.",
+  "scripts": {
+    "build": "next build",
+    "clean": "rm -rf dist",
+    "clean:node": "rm -rf node_modules",
+    "dev": "next",
+    "format": "prettier --write \"src/**/*.{js,ts,css,scss}\"",
+    "lint": "eslint --fix \"src/**/*.ts\"",
+    "serve": "serve dist",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourjuaneight/data.git"
+  },
+  "author": "Juan Villela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fourjuaneight/data/issues"
+  },
+  "homepage": "https://github.com/fourjuaneight/data#readme",
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npm run lint"
+    ],
+    "*.{js,ts,css,scss}": [
+      "npm run format"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/node": "^17.0.42",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "pnpm": "^7.2.1",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@auth0/nextjs-auth0": "^1.9.0",
+    "@tanstack/react-table": "^8.0.0-beta.8",
+    "date-fns": "^2.28.0",
+    "glob": "^8.0.3",
+    "next": "^12.1.6",
+    "next-plugin-preact": "^3.0.7",
+    "preact": "^10.7.3",
+    "preact-render-to-string": "^5.2.0",
+    "react": "npm:@preact/compat@^17.1.1",
+    "react-charts": "^3.0.0-beta.36",
+    "react-dom": "npm:@preact/compat@^17.1.1",
+    "react-query": "^3.39.1",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0",
+    "tailwindcss": "^3.1.2"
+  }
+}
