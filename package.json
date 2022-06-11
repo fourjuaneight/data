@@ -10,7 +10,8 @@
     "format": "prettier --write \"src/**/*.{js,ts,css,scss}\"",
     "lint": "eslint --fix \"src/**/*.ts\"",
     "serve": "serve dist",
-    "start": "next start"
+    "start": "next start",
+    "tw": "tailwindcss --no-autoprefixer -i ./src/styles/tailwind.css -o ./src/styles/tw.css"
   },
   "repository": {
     "type": "git",
