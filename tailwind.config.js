@@ -13,7 +13,7 @@ const pallete = {
 };
 
 module.exports = {
-  content: ['./layouts/**/*.html'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       borderColor: pallete,
